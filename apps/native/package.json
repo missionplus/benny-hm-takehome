@@ -1,0 +1,70 @@
+{
+  "name": "native",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "expo start --web",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@repo/ui": "*",
+    "expo": "~51.0.39",
+    "expo-constants": "~16.0.2",
+    "expo-linear-gradient": "13.0.2",
+    "expo-linking": "~6.3.1",
+    "expo-router": "~3.5.24",
+    "expo-status-bar": "~1.12.1",
+    "expo-system-ui": "~3.0.7",
+    "expo-av": "14.0.7",
+    "nativewind": "^4.1.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.74.5",
+    "react-native-reanimated": "3.10.1",
+    "react-native-safe-area-context": "4.10.5",
+    "react-native-screens": "3.31.1",
+    "react-native-svg": "15.2.0",
+    "react-native-web": "~0.19.10",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@expo/webpack-config": "^19.0.0",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^13.2.0",
+    "@types/jest": "^29.5.14",
+    "@types/react": "~18.2.14",
+    "@types/react-native": "^0.73.0",
+    "babel-plugin-inline-import": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-expo": "51.0.4",
+    "react-native-svg-transformer": "^1.5.0",
+    "react-test-renderer": "18.2.0",
+    "typescript": "~5.3.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg|nativewind)"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "moduleNameMapper": {
+      "\\.svg": "<rootDir>/__mocks__/svgMock.js"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "testEnvironment": "node",
+    "testRegex": "/__tests__/.*\\.(test|spec)\\.[jt]sx?$"
+  }
+}

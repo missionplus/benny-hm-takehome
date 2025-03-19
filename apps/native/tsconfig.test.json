@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "types": ["jest", "node", "react-native"],
+    "esModuleInterop": true
+  },
+  "include": ["app/__tests__/**/*"]
+}
