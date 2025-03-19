@@ -1,0 +1,11 @@
+{
+  "extends": "@repo/typescript-config/react-native-library",
+  "include": [".", "../../declarations.d.ts"],
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "nativewind",
+    "typeRoots": ["./src/types", "./node_modules/@types"]
+  }
+}

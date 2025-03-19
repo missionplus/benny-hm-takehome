@@ -1,0 +1,1 @@
+export const HEY_AI_LINK = "https://heymax.ai"
